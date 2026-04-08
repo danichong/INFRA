@@ -1,0 +1,9 @@
+services:
+  w1:
+    image: nginx:alpine
+    ports: ['4000:80']
+    volumes: ['./web01:/usr/share/nginx/html']
+  w2:
+    image: nginx:alpine
+    ports: ['4001:80']
+    volumes: ['./web02:/usr/share/nginx/html']

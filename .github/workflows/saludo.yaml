@@ -10,16 +10,13 @@ jobs:
   saludo:
     runs-on: ubuntu-latest
 
-    env:
-        name: "Daniela Choncen"
-
     steps:
        - name: Saludo desde main
          if: github.ref == 'refs/heads/main'
-         run: echo "Hola desde main, mi nombre es $name"
+         run: echo "Hola desde main, mi nombre es Daniela Choncen"
 
        - name: Saludo desde develop
          if: github.ref == 'refs/heads/develop'
-         run: echo "Hola desde develop, mi nombre es $name"
+         run: echo "Hola desde develop, mi nombre es Daniela Choncen"
          
          
